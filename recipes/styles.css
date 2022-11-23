@@ -6,12 +6,26 @@ body {
 .directions {
   display: table;
   margin: 0 auto;
+  text-align:left;
+
+}
+
+.directions li{
+text-align: left;
+
+}
+
+.longer-directions {
+  display: table;
+  margin: 0 auto;
+  width: 60%;
 
 }
 
 .ingridients {
   display: table;
   margin: 0 auto;
+  text-align: left;
   
 }
 
@@ -24,6 +38,7 @@ body {
 .instructions {
   display: table;
   margin: 0 auto;
+  text-align: left;
 }
 
 .three-recipes {
@@ -34,4 +49,5 @@ body {
 
 .step-by-step li {
   padding-bottom: 10px;
+  text-align: left;
 }
