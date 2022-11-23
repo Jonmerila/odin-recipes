@@ -1,9 +1,37 @@
+body {
+  background-color: #ebd7e4;
+  text-align:center;
+}
+
 .directions {
-  display: flex;
+  display: table;
+  margin: 0 auto;
 
 }
 
 .ingridients {
-  display: flex;
+  display: table;
+  margin: 0 auto;
+  
+}
 
+.cooking {
+  display: table;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.instructions {
+  display: table;
+  margin: 0 auto;
+}
+
+.three-recipes {
+  font-size: 35px;
+  display: table;
+  margin: 0 auto;
+}
+
+.step-by-step li {
+  padding-bottom: 10px;
 }
