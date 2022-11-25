@@ -13,8 +13,9 @@
     <p>In this page, we will be going through one of the worlds best dishes, the Lasagna.</p>
     <dish>
         <div>
-            <h2>Ingredients</h2>
             <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul id="ingredients-list"></ul>
                 <ul>
                     <li>Meat</li>
                     <li>Onion</li>
@@ -58,4 +59,13 @@
         </div>
     </dish>
 </body>
+<script >
+    const ingredients = ['Meat', 'Onion', 'Garlic', 'Tomato products (Crushed tomatoes, canned tomatoes, tomato paste)', 'Sugar', 'Spices and seasonings (Fresh parsley, dried basil leaves, salt, Italian seasoning, fennel seeds and black pepper)', 'Lasagna noodles/plates', 'Cheeses', 'Egg'];
+    const list = document.getElementById("ingredients-list");
+    console.log(list.innerHTML);
+    list.innerHTML = "";
+    for(let i = 0; i<ingredients.length; i++){
+        list.innerHTML += "<li>" + ingredients[i] + "</li>";
+    }
+</script>
 </html>

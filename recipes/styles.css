@@ -1,6 +1,21 @@
+h2 {
+  text-align:center;
+}
+
 body {
   background-color: #ebd7e4;
   text-align:center;
+}
+
+a:link {
+  text-decoration:none;
+}
+
+.recipe-btn {
+  height:100px;
+  width:150px;
+  font-size: 25px;
+  
 }
 
 .directions {
@@ -18,7 +33,7 @@ text-align: left;
 .longer-directions {
   display: table;
   margin: 0 auto;
-  width: 60%;
+  width: 40%;
 
 }
 
@@ -26,13 +41,14 @@ text-align: left;
   display: table;
   margin: 0 auto;
   text-align: left;
+  width: 40%;
   
 }
 
 .cooking {
   display: table;
   margin: 0 auto;
-  width: 60%;
+  width: 40%;
 }
 
 .instructions {

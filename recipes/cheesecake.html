@@ -14,18 +14,7 @@
         <p>Learn how to do the masterful and creamy dessert, the cheesecake.</p>
         <div class="ingredients">   
             <h2>Ingredients</h2>
-            <ul>
-                <li>1 tablespoon softened butter</li>
-                <li>3 tablespoons crumbs from graham crackers OR oreos</li>
-                <li>1 (90 g or 3 ounces) package soft ladyfingers (24 total) left whole, but trimmed to fit pan (optional) </li>
-                <li>3 (240 g or 8 ounces) packages cream cheese, at room temperature</li>
-                <li>200 g (or 1 cup) sugar</li>
-                <li>3 large eggs, at room temperature</li>
-                <li>2 teaspoons vanilla extract</li>
-                <li>4 tablespoons heavy cream</li>
-                <li>4 tablespoons sour cream</li>
-                <li>Heavy-duty foil for pan</li>
-            </ul>
+            <ul id="ingredients-list"></ul>
         </div>
         <div class="longer-directions">
             <h2>Step-by-step directions</h2>
@@ -38,4 +27,19 @@
         </div>
     </dish>
 </body>
+<script >
+    const ingredients = ['1 tablespoon softened butter',
+     '3 tablespoons crumbs from graham crackers OR oreos',
+      '1 (90 g or 3 ounces) package soft ladyfingers (24 total) left whole, but trimmed to fit pan (optional)',
+       '3 (240 g or 8 ounces) packages cream cheese, at room temperature',
+        '200 g (or 1 cup) sugar', '3 large eggs, at room temperature',
+         '2 teaspoons vanilla extract',
+        '4 tablespoons heavy cream', '4 tablespoons sour cream', 'Heavy-duty foil for pan'];
+    const list = document.getElementById("ingredients-list");
+    console.log(list.innerHTML);
+    list.innerHTML = "";
+    for(let i = 0; i<ingredients.length; i++){
+        list.innerHTML += "<li>" + ingredients[i] + "</li>";
+    }
+</script>
 </html>

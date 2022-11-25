@@ -13,6 +13,7 @@
         <h2>Description</h2>
         <p>The crockpot buffalo chiecken is great for hearty sandwiches that will please those who love Buffalo chicken wings.</p>
         <div class="ingredients">
+            <ul id="ingredients-list"></ul>
             <h2>Ingredients</h2>
             <ul>
                 <li>4 skinless, boneless chicken breast halves</li>
@@ -33,4 +34,17 @@
         </div>  
     </dish>
 </body>
+<script >
+    const ingredients = ['4 skinless, boneless chicken breast halves',
+     '1 (5.2 dl or 17.5 fl ounce) bottle Buffalo wing sauce, divided',
+      '1/2 (30 g or 1 ounce) package dry ranch salad dressing mix',
+       '2 Tablespoons butter',
+        '6 hoagie rolls ( or the bread buns of your choice), split lengthwise'];
+    const list = document.getElementById("ingredients-list");
+    console.log(list.innerHTML);
+    list.innerHTML = "";
+    for(let i = 0; i<ingredients.length; i++){
+        list.innerHTML += "<li>" + ingredients[i] + "</li>";
+    }
+</script>
 </html>
