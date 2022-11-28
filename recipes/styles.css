@@ -2,6 +2,11 @@ h2 {
   text-align:center;
 }
 
+img {
+  width: 300px;
+  height: 300px;
+}
+
 body {
   background-color: #ebd7e4;
   text-align:center;
@@ -10,6 +15,23 @@ body {
 a:link {
   text-decoration:none;
 }
+
+a {
+  width:300px;
+  height:300px;
+  margin: 40px;
+}
+
+h3 {
+  display:inline-block;
+  text-align:center;
+
+}
+
+/* .border {
+  border: 3px solid white;
+  
+} */
 
 .recipe-btn {
   height:100px;
@@ -58,12 +80,28 @@ text-align: left;
 }
 
 .three-recipes {
-  font-size: 35px;
-  display: table;
+  display: flex;
+  justify-content: space-evenly;
   margin: 0 auto;
+  width:300px;
+}
+
+.three-recipes img {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
 .step-by-step li {
   padding-bottom: 10px;
   text-align: left;
 }
+
+.recipe-names{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%
+}
+
+
